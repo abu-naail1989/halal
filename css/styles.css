@@ -17,6 +17,7 @@ Variables
   --clr-grey-5: #617d98;
   --clr-grey-10: #f1f5f8;
   --clr-white: #fff;
+  --clr-yellow: yellow;
   --ff-primary: "Catamaran", "sans-serif";
   --ff-secondary: "Grand Hotel", cursive;
   --transition: all 0.3 linear;
@@ -175,7 +176,7 @@ header {
 
 .banner h1 {
   text-transform: uppercase;
-  color: var(--clr-white);
+  color: var(--clr-yellow);
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   /* animation */
@@ -189,4 +190,69 @@ header {
   padding: 1rem 1.75rem;
   /* animation */
   animation: show 5s linear 1;
+}
+/* 
+====================================
+Content-divider
+====================================
+ */
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary),
+    #e9b949,
+    rgb(134, 38, 38)
+  );
+}
+/* 
+====================================
+Menus
+====================================
+ */
+
+.skills {
+  background: var(--clr-grey-10);
+}
+
+.menu {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.menu-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+  display: inline-block;
+  color: var(--clr-primary);
+}
+
+.menu-text {
+  color: var(--clr-grey-5);
+  max-width: 17rem;
+  margin: 0 auto;
+}
+
+.menu:hover {
+  background: var(--clr-white);
+  box-shadow: 0 2px var(--clr-primary);
+}
+
+.menu:hover .menu-icon {
+  transform: translateY(-5px);
+}
+
+@media screen and (min-width: 576px) {
+  .menu {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    width: 25%;
+  }
 }
