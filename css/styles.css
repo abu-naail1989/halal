@@ -256,3 +256,45 @@ Menus
     width: 25%;
   }
 }
+
+/* 
+====================================
+About
+====================================
+ */
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-pic-container {
+  background: var(--clr-primary);
+  border: 0.5rem solid var(--clr-primary);
+  max-width: 30rem;
+  overflow: hidden;
+}
+.about-pic {
+  transition: var(--transition);
+}
+
+.about-pic-container:hover .about-pic {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-text {
+  max-width: 26rem;
+  color: var(--clr-grey-5);
+}
+
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+  }
+}
+
+.about-info {
+  padding-left: 2rem;
+}
