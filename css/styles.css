@@ -298,3 +298,61 @@ About
 .about-info {
   padding-left: 2rem;
 }
+
+/* 
+====================================
+Products
+====================================
+ */
+
+.products article {
+  padding: 2rem 0;
+}
+
+.product-text {
+  color: var(--clr-grey-5);
+  max-width: 26rem;
+}
+
+.product {
+  margin-bottom: 2rem;
+}
+
+.product-img {
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  height: 17rem;
+  object-fit: cover;
+}
+
+.product-price {
+  color: var(--clr-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-info {
+    float: left;
+    width: 20%;
+  }
+  .products-inventory {
+    float: left;
+    width: 80%;
+  }
+  .product {
+    margin-bottom: 0;
+    padding: 0 1rem;
+  }
+}
