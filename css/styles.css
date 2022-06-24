@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 
 ====================================
 FONTS
@@ -118,7 +119,7 @@ p {
 .clearfix::before {
   content: "";
   clear: both;
-  display: table;
+  /* display: table; */
 }
 
 .section-title h3 {
@@ -152,7 +153,7 @@ Header
 
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
   position: relative;
   /* animation */
@@ -211,7 +212,7 @@ Menus
 ====================================
  */
 
-.skills {
+.menus {
   background: var(--clr-grey-10);
 }
 
@@ -366,7 +367,7 @@ Services
  */
 .services-title {
   padding: 4rem;
-  margin-bottom: -4rem;
+  margin-bottom: -8rem;
   text-align: center;
 }
 
@@ -422,3 +423,6 @@ Services
     margin-right: 3.333%;
   }
 }
+=======
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel');
+>>>>>>> 250b2ab54e22aebc522c0a22fe12b180708259a9
